@@ -78,9 +78,9 @@ for row in customer_details:
         total_261 += tax
         total_261 += freight
     
-list_updated = [['CustomerID', 'Total'],['250', total_250],['251', total_251],['252', total_252],['253', total_253],['254', total_254],
-                ['255', total_255],['256', total_256], ['257', total_257], ['258', total_258],['259', total_259],
-                ['260', total_260], ['261', total_261]]
+list_updated = [['CustomerID', 'Total'],['250', format(total_250, '.2f')],['251', format(total_251,'.2f')],['252', format(total_252, '.2f')],['253', format(total_253,'.2f')],['254', format(total_254,'.2f')],
+                ['255', format(total_255,'.2f')],['256', format(total_256, '.2f')], ['257', format(total_257, '.2f')], ['258', format(total_258, '.2f')],['259', format(total_259,'.2f')],
+                ['260', format(total_260,'.2f')], ['261', format(total_261,'.2f')]]
 
 for row in list_updated:
     writer.writerow(row)
