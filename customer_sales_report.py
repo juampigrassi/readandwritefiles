@@ -84,21 +84,6 @@ list_updated = [['CustomerID', 'Total'],['250', format(total_250, '.2f')],['251'
 
 for row in list_updated:
     writer.writerow(row)
-
+  
 infile.close()
 outfile.close()
-
-
-
-    
-
-
-    
-        
-
-
-    
-
-
-
-
